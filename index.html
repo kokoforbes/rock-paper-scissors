@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+     <input type="button" value="click" onclick="rps()" class="btn">
+    </div>
+    <script>
+    function rps(){
+        /*return random decimal number between 0 and 1.0 */
+    let random = Math.random();
+
+    if(random < .3) {alert("Rock")};
+    if(random > .3 && random < .6) {alert("Paper")};
+    if(random > .6) {alert("Scissors")};
+}
+    </script>
+</body>
+</html>
